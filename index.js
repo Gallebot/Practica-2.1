@@ -3,7 +3,7 @@ const express = require("express");
 const app = express()
 
 app.get("/hola/", (req,res) =>{ //Estamos generando un subpagina
-    res.send("Hola")
+    res.send("Hola, esta es una subpagina")
 });
 
 app.get("/", (req,res) =>{ //Aqui se va a la página principal
