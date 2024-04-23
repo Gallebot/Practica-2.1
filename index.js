@@ -2,9 +2,10 @@ const express = require("express");
 const app = express();
 
 // Ruta raíz con método GET
-app.get("/", (req, res) => {
-    res.status(200).send("Hello Profe");
-});
+app.get('/', (req, res) => {
+    res.status(200).send('OK');
+    console.log('Código de estado 200 enviado');
+  });
 
 // Ruta raíz con método POST
 app.post("/", (req, res) => {
