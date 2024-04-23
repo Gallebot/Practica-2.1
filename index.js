@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 
 // Ruta raíz con método POST
 app.post("/", (req, res) => {
-    res.send("Has enviado un POST a la ruta raíz");
+    res.json({ mensaje: "Has enviado un POST a la ruta raíz", numero: Math.random() });
 });
 
 // Subpágina '/hola' con método GET
@@ -18,7 +18,7 @@ app.get("/hola/", (req, res) => {
 
 // Subpágina '/hola' con método POST
 app.post("/hola/", (req, res) => {
-    res.send("Has enviado un POST a /hola");
+    res.json({ mensaje: "Has enviado un POST a /hola", numero: Math.random() });
 });
 
 // Listener del servidor en el puerto 8000
